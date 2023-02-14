@@ -1,0 +1,72 @@
+.inputTask {
+  display: grid;
+  grid-template-columns: 1fr 50px 50px;
+  margin-bottom: 15px;
+  background-color: #dbe2ef;
+  border-radius: 5px;
+  padding-right: 10px;
+
+  &Label {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 12px 15px;
+    cursor: pointer;
+  }
+
+  &Checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  &Title,
+  &TitleDone {
+    padding: 5px;
+    line-height: 1.2;
+  }
+
+  &TitleDone {
+    text-decoration: line-through;
+  }
+
+  &TitleEdit {
+    font: 1rem/1em "Roboto", sans-serif;
+    border: none;
+    padding: 5px;
+    background: none;
+    box-shadow: 0 4px 0 -3px #3f72af;
+
+    &:focus {
+      outline: 1px solid #3f72af;
+      border-radius: 5px;
+    }
+  }
+
+  &Edit,
+  &Remove,
+  &Save {
+    display: block;
+    padding: 0;
+    border: none;
+    background: none no-repeat center center;
+    cursor: pointer;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &Edit {
+    background-image: url("./images/edit.svg");
+  }
+
+  &Remove {
+    background-image: url("./images/trash.svg");
+  }
+
+  &Save {
+    background-image: url("./images/check.svg");
+  }
+}
