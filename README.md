@@ -22,6 +22,11 @@ A simple todo list
 <p>TypeScript</p>
 <p>Zustand</p>
 
+<div align="center">
+  <span>
+    <img src="./src/assets/img01.png" alt="app" width="700" height="500">
+   </span>
+</div>
 
 <!-- GETTING STARTED -->
 ### Installation
